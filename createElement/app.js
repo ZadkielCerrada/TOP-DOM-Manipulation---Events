@@ -1,5 +1,7 @@
 const container = document.querySelector("#container");
 
+// Elements
+
 const content = document.createElement("div");
 content.classList.add("content");
 content.textContent = "This is the glorious text-content!";
@@ -23,12 +25,16 @@ const divPinkP = document.createElement("p");
 divPinkP.classList.add("div-pink-p");
 divPinkP.textContent = "ME TOO!";
 
+// Append
+
 container.appendChild(content);
 container.appendChild(pRed);
 container.appendChild(h3Blue);
 container.appendChild(divPink);
 divPink.appendChild(divPinkH1);
 divPink.appendChild(divPinkP);
+
+// Style
 
 pRed.style.color = "red";
 h3Blue.style.color = "blue";

@@ -1,4 +1,5 @@
 // Method 2
+
 const button = document.querySelector(".btn");
 
 button.onclick = () => alert("Hello World");
@@ -6,7 +7,8 @@ button.onclick = () => alert("Hello World");
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 // Method 3
-const btn = document.querySelector("#btn");
+
+// const btn = document.querySelector("#btn");
 
 // btn.addEventListener("click", () => {
 //     alert("Hello World");
@@ -16,6 +18,16 @@ const btn = document.querySelector("#btn");
 //     console.log(e.target);
 // });
 
-btn.addEventListener("click", function (e) {
-    e.target.style.background = "blue";
+// btn.addEventListener("click", function (e) {
+//     e.target.style.background = "blue";
+// });
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        alert(button.id);
+    });
 });
